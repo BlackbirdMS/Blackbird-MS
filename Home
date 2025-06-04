@@ -75,7 +75,7 @@
         </div>
     </header>
 
-    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32"> {/* Increased top padding for fixed header */}
+    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32"> <!-- Increased top padding for fixed header -->
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Payment Processing for High-Risk Industries</h1>
             <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Blackbird Merchant Services: Specializing in CBD, e-commerce, and other challenging sectors. We provide stable and secure merchant accounts tailored to your unique business needs.</p>
