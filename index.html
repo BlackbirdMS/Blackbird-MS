@@ -11,7 +11,7 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1A202C/4A5568?text=Safe+Secure+Reliable'); /* Darker background */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1A202C/4A5568?text=Abstract+Secure+Background'); /* Darker background */
             background-size: cover;
             background-position: center;
         }
@@ -60,11 +60,16 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
+    <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center">
-                <img src="blackbird logo.png" alt="Blackbird Merchant Services Logo" class="h-20 md:h-26 mr-6">
-                </a>
+                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
+                <img src="https://placehold.co/150x50/FFFFFF/000000?text=Blackbird+M.S." alt="Blackbird Merchant Services Logo" class="h-10 md:h-12 mr-3">
+                <!-- For a text fallback or if you prefer text:
+                <span class="text-2xl font-bold text-gray-800">Blackbird <span class="text-slate-700">M.S.</span></span>
+                -->
+            </a>
             <nav class="space-x-4">
                 <a href="#home" class="text-gray-600 hover:text-slate-700">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-slate-700">About Us</a>
@@ -75,6 +80,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32"> <!-- Increased top padding for fixed header -->
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Payment Processing for High-Risk Industries</h1>
@@ -83,16 +89,17 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">About Blackbird Merchant Services</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
-                    <img src="blackbird logo.png" alt="Blackbird Merchant Services Team" class="rounded-lg shadow-lg w-full">
+                    <img src="https://placehold.co/600x400/F7FAFC/2D3748?text=Our+Expert+Team" alt="Blackbird Merchant Services Team" class="rounded-lg shadow-lg w-full">
                     <script>
                         const imgAbout = document.querySelector('img[alt="Blackbird Merchant Services Team"]');
                         imgAbout.onerror = () => {
-                            imgAbout.src = 'blackbird logo.png';
+                            imgAbout.src = 'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Not+Available';
                         };
                     </script>
                 </div>
@@ -105,10 +112,12 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Core Services</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
@@ -116,6 +125,7 @@
                     <h3 class="text-xl font-semibold mb-3">High-Risk Merchant Accounts</h3>
                     <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors. We find solutions that fit your specific industry and risk profile.</p>
                 </div>
+                <!-- Service Card 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -123,6 +133,7 @@
                     <h3 class="text-xl font-semibold mb-3">Chargeback Mitigation</h3>
                     <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue, crucial for high-risk sectors.</p>
                 </div>
+                <!-- Service Card 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                      <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
@@ -130,21 +141,24 @@
                     <h3 class="text-xl font-semibold mb-3">Fraud Prevention</h3>
                     <p class="text-gray-600">Advanced fraud detection and prevention systems to safeguard your transactions and maintain account stability.</p>
                 </div>
-                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Payment Gateway Integration</h3>
                     <p class="text-gray-600">Seamless integration with popular e-commerce platforms and shopping carts, ensuring a smooth checkout experience.</p>
                 </div>
-                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Fast Approvals & Onboarding</h3>
                     <p class="text-gray-600">Streamlined application process to get your high-risk merchant account up and running quickly.</p>
                 </div>
-                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <!-- Service Card 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                          <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
                     </div>
@@ -155,6 +169,7 @@
         </div>
     </section>
 
+    <!-- Industries Served Section -->
     <section id="industries" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Industries We Specialize In</h2>
@@ -203,13 +218,14 @@
         </div>
     </section>
 
-    <section id="why-choose-us" class="py-16 bg-slate-800 text-white"> {/* Changed background to dark slate */}
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-16 bg-slate-800 text-white"> <!-- Changed background to dark slate -->
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" style="--tw-text-opacity: 1; color: rgba(255, 255, 255, var(--tw-text-opacity));">Why Partner With Us?</h2>
             <style> #why-choose-us .section-title::after { background-color: white; } </style>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto"> {/* Icon background white, icon color dark slate */}
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto"> <!-- Icon background white, icon color dark slate -->
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">High Approval Rates</h3>
@@ -240,6 +256,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Get Started Today</h2>
@@ -278,14 +295,17 @@
             </div>
             <div class="text-center mt-12">
                 <p class="text-lg">Or reach us directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (555) 123-4567 | Email: sales@blackbirdms.example.com</p> {/* Updated Email */}
+                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (555) 123-4567 | Email: sales@blackbirdms.example.com</p> <!-- Updated Email -->
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-300 py-12"> {/* Darker footer */}
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12"> <!-- Darker footer -->
         <div class="container mx-auto px-6 text-center">
              <a href="#" class="flex items-center justify-center mb-4">
+                <!-- !!! AGAIN, REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO if you want it in footer too !!! -->
+                <!-- Or use a simplified/inverted version if you have one -->
                 <img src="https://placehold.co/120x40/FFFFFF/FFFFFF?text=Blackbird+M.S." alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYear"></span> Blackbird Merchant Services. All Rights Reserved.</p>
