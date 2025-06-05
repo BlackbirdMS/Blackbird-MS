@@ -206,38 +206,102 @@
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Discuss Your Cannabis/CBD/Delta Payment Needs</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
                 <p class="text-center text-lg mb-8">Let our experts help you find the right payment processing solution for your cannabis, CBD, Delta-8, or Delta-9 business. Fill out the form for a confidential consultation.</p>
-                <form
-  action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com"
-  method="POST"
->
-                    <div class="mb-6">
-                        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
-                    </div>
-                    <div class="mb-6">
-                        <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
-                        <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
-                    </div>
-                    <div class="mb-6">
-                        <label for="business_type" class="block text-gray-700 font-semibold mb-2">Business Type (e.g., CBD Online, Delta-8 Retail)</label>
-                        <input type="text" id="business_type" name="business_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Briefly describe your products and needs</label>
-                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="bg-black hover:bg-slate-800 text-white font-bold py-3 px-10 rounded-lg text-lg cta-button">Request Consultation</button>
-                    </div>
-                </form>
+      <form
+        action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com"
+        method="POST"
+      >
+        <!-- ─── FormSubmit Required Hidden Fields ───────────────────────── -->
+        <input type="hidden" name="_captcha"  value="false">
+        <input type="hidden" name="_subject"  value="New Cannabis Lead">
+        <input type="hidden" name="_next"     value="https://sub.yoursite.com/thank-you.html">
+        <input type="text"   name="_honey"    value="" style="display:none">
+        <!-- ──────────────────────────────────────────────────────────────── -->
+
+        <div class="mb-6">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          >
+        </div>
+
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          >
+        </div>
+
+        <div class="mb-6">
+          <label for="phone" class="block text-gray-700 font-semibold mb-2">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          >
+        </div>
+
+        <div class="mb-6">
+          <label for="company" class="block text-gray-700 font-semibold mb-2">
+            Company Name
+          </label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          >
+        </div>
+
+        <div class="mb-6">
+          <label for="business_type" class="block text-gray-700 font-semibold mb-2">
+            Business Type (e.g., CBD Online, Delta-8 Retail)
+          </label>
+          <input
+            type="text"
+            id="business_type"
+            name="business_type"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          >
+        </div>
+
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">
+            Briefly describe your products and needs
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600"
+          ></textarea>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-black hover:bg-slate-800 text-white font-bold py-3 px-10 rounded-lg text-lg cta-button"
+          >
+            Request Consultation
+          </button>
+        </div>
+      </form>
                 <div id="formMessageCannabis" class="mt-6 text-center"></div>
             </div>
             <div class="text-center mt-12">
