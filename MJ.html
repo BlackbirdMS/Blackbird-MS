@@ -11,7 +11,7 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg-cannabis {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/2F855A/C6F6D5?text=Cannabis+Industry+Focus'); /* Greenish, nature-inspired but professional */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/2F855A/C6F6D5?text=Cannabis+Industry+Focus');
             background-size: cover;
             background-position: center;
         }
@@ -39,20 +39,6 @@
             background-color: #2D3748; /* Tailwind gray-800 - consistent accent */
             margin: 10px auto 0;
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #555;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #333;
-        }
         html {
             scroll-padding-top: 90px; 
         }
@@ -75,8 +61,7 @@
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center"> <!-- Assuming your main page is index.html -->
-                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
+            <a href="index.html" class="flex items-center">
                 <img src="./blackbird logo.png" alt="Blackbird Merchant Services Logo" class="h-10 md:h-12 mr-3">
             </a>
             <nav class="space-x-4">
@@ -102,13 +87,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Why Blackbird M.S. for Your Cannabis/CBD/Delta Business?</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="mb-8 md:mb-0">
-                    <img src="https://images.pexels.com/photos/8471796/pexels-photo-8471796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A customer making a secure, contactless payment with a smartphone at a retail counter." class="rounded-lg shadow-lg w-full">
-                     <script>
-                        const imgWhyCannabis = document.querySelector('img[alt="Secure Payment Processing for Cannabis"]');
-                        imgWhyCannabis.onerror = () => {
-                            imgWhyCannabis.src = 'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Not+Available';
-                        };
-                    </script>
+                    <img src="Secure Cannabis Payments.png" alt="A customer making a secure, contactless payment with a smartphone at a retail counter." class="rounded-lg shadow-lg w-full">
                 </div>
                 <div>
                     <p class="text-lg mb-4">The cannabis, CBD, and Delta-variant markets are rapidly evolving, and so are the regulations surrounding them. Standard payment processors often shy away from these industries due to their high-risk classification. At Blackbird Merchant Services, we embrace the challenge.</p>
@@ -130,7 +109,6 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Tailored Solutions for the Cannabis Ecosystem</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -138,45 +116,19 @@
                     <h3 class="text-xl font-semibold mb-3">CBD Merchant Accounts</h3>
                     <p class="text-gray-600">Reliable processing for online and retail CBD sales, including full-spectrum, broad-spectrum, and isolate products.</p>
                 </div>
-                <!-- Service Card 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                          <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Delta-8 & Delta-9 Solutions</h3>
                     <p class="text-gray-600">Specialized accounts for businesses selling hemp-derived Delta-8 THC and compliant Delta-9 THC products.</p>
                 </div>
-                <!-- Service Card 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                      <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Licensed Cannabis Retail</h3>
                     <p class="text-gray-600">Compliant payment solutions for licensed dispensaries (where regulations permit card acceptance).</p>
-                </div>
-                <!-- Service Card 4 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">E-commerce & POS Integration</h3>
-                    <p class="text-gray-600">Seamless integration with your online store or point-of-sale system for smooth transactions.</p>
-                </div>
-                 <!-- Service Card 5 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Chargeback Prevention</h3>
-                    <p class="text-gray-600">Strategies and tools to help minimize chargebacks, a common concern in high-risk industries.</p>
-                </div>
-                 <!-- Service Card 6 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M5 16h14M5 12h14M5 8h14"></path></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Regulatory Guidance</h3>
-                    <p class="text-gray-600">Assistance in understanding payment-related compliance for your specific products and region.</p>
                 </div>
             </div>
         </div>
@@ -188,31 +140,18 @@
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Processing for Delta-8 THC & Delta-9 THC</h2>
             <div class="max-w-3xl mx-auto">
                 <p class="text-lg mb-4">The legal landscape for hemp-derived cannabinoids like Delta-8 THC and Delta-9 THC (with less than 0.3% THC by dry weight) is complex and varies by jurisdiction. Securing payment processing for these products requires specialized knowledge.</p>
-                <p class="text-lg mb-4">Blackbird Merchant Services works with financial institutions that understand these nuances. We can help you establish merchant accounts if your business model and products meet the current legal and banking requirements. Key considerations include:</p>
-                <ul class="text-lg mb-4 bullet-list">
-                    <li><strong>Source of Hemp:</strong> Ensuring products are derived from legally cultivated hemp.</li>
-                    <li><strong>Lab Testing (COAs):</strong> Third-party Certificates of Analysis are crucial for product verification.</li>
-                    <li><strong>Marketing Compliance:</strong> Avoiding unsubstantiated health claims and ensuring age verification.</li>
-                    <li><strong>Shipping Restrictions:</strong> Adherence to state-by-state shipping laws for Delta-8/9 products.</li>
-                </ul>
-                <p class="text-lg">We stay updated on the evolving regulations to provide the most current advice and solutions for your Delta-variant business.</p>
+                <p class="text-lg mb-4">Blackbird Merchant Services works with financial institutions that understand these nuances. We can help you establish merchant accounts if your business model and products meet the current legal and banking requirements.</p>
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section for Cannabis Page -->
     <section id="contact-cannabis" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Discuss Your Cannabis/CBD/Delta Payment Needs</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
                 <p class="text-center text-lg mb-8">Let our experts help you find the right payment processing solution for your cannabis, CBD, Delta-8, or Delta-9 business. Fill out the form for a confidential consultation.</p>
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 section-title">Get Started Today</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
-                <p class="text-center text-lg mb-8">Ready to secure reliable payment processing for your high-risk business? Fill out the form below or contact us directly.</p>
-                <form action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
+                <form id="contactFormCannabis" action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="mb-6">
                         <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
@@ -223,75 +162,26 @@
                         <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
                     </div>
                     <div class="mb-6">
-                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
-                    </div>
-                    <div class="mb-6">
                         <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
                         <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
                     </div>
                     <div class="mb-6">
-                        <label for="industry" class="block text-gray-700 font-semibold mb-2">Industry (e.g., CBD, E-commerce)</label>
-                        <input type="text" id="industry" name="industry" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
+                        <label for="business_type" class="block text-gray-700 font-semibold mb-2">Business Type (e.g., CBD Online, Delta-8 Retail)</label>
+                        <input type="text" id="business_type" name="business_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
                     </div>
                     <div class="mb-6">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Briefly describe your products and needs</label>
                         <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="bg-black hover:bg-slate-800 text-white font-bold py-3 px-10 rounded-lg text-lg cta-button">Send Inquiry</button>
+                        <button type="submit" class="bg-black hover:bg-slate-800 text-white font-bold py-3 px-10 rounded-lg text-lg cta-button">Request Consultation</button>
                     </div>
                 </form>
-                <div id="formMessage" class="mt-6 text-center"></div>
-            </div>
-            <div class="text-center mt-12">
-                <p class="text-lg">Or reach us directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p> <!-- Updated Email -->
-            </div>
-        </div>
-    </section>
-  <!-- (repeat for email, phone, company, business_type, message) -->
-
-  <div class="text-center">
-    <button
-      type="submit"
-      class="bg-black text-white font-bold py-3 px-10 rounded-lg"
-    >
-      Request Consultation
-    </button>
-  </div>
-</form>
-
-<!-- placeholder for our inline confirmation -->
-<div id="formMessageCannabis" class="mt-6 text-center"></div>
-
-<script>
-  const form = document.getElementById('contactFormCannabis');
-  const msg  = document.getElementById('formMessageCannabis');
-
-  form.addEventListener('submit', async e => {
-    e.preventDefault();                   // stop the full-page redirect
-    msg.textContent = 'Sending…';         // optional feedback
-
-    try {
-      await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form)
-      });
-      msg.innerHTML = '<p class="text-green-500 font-semibold">Thanks! We’ve received your request and will be in touch soon.</p>';
-      form.reset();
-    } catch (err) {
-      console.error(err);
-      msg.innerHTML = '<p class="text-red-500 font-semibold">Oops—something went wrong. Please try again later.</p>';
-    }
-  });
-</script>
-<!-- ────────────────────────────────────────────────────────────────────────── -->
-
+                <div id="formMessageCannabis" class="mt-6 text-center"></div>
             </div>
             <div class="text-center mt-12">
                 <p class="text-lg">Or reach our specialists directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 (Cannabis Dept.) | Email: blackbirdmerchantservicesllc@outlook.com </p> 
+                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p> 
             </div>
         </div>
     </section>
@@ -300,41 +190,69 @@
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
              <a href="index.html" class="flex items-center justify-center mb-4">
-                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
                 <img src="./blackbird logo.png" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYearCannabis"></span> Blackbird Merchant Services. All Rights Reserved.</p>
             <p class="mt-2 text-sm">Specialized payment solutions for high-risk industries, including Cannabis, CBD, and Delta-variants.</p>
             <div class="mt-4">
-                <a href="index.html#privacy" class="text-gray-400 hover:text-white px-2">Privacy Policy</a> | <!-- Link to main site's policy -->
-                <a href="index.html#terms" class="text-gray-400 hover:text-white px-2">Terms of Service</a> <!-- Link to main site's terms -->
+                <a href="index.html#privacy" class="text-gray-400 hover:text-white px-2">Privacy Policy</a> |
+                <a href="index.html#terms" class="text-gray-400 hover:text-white px-2">Terms of Service</a>
             </div>
         </div>
     </footer>
 
+    <!-- UPDATED JAVASCRIPT -->
     <script>
         // Smooth scrolling for anchor links on this page
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                // Check if the link is for the current page or another page
                 const href = this.getAttribute('href');
                 if (href.startsWith('#')) {
                     e.preventDefault();
-                    const targetId = href;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
-                // Links to other pages (e.g., index.html#about) will navigate normally
             });
         });
 
         // Set current year in footer
         document.getElementById('currentYearCannabis').textContent = new Date().getFullYear();
 
-    
+        // Contact Form Submission with AJAX
+        const contactFormCannabis = document.getElementById('contactFormCannabis');
+        const formMessageCannabis = document.getElementById('formMessageCannabis');
+
+        if(contactFormCannabis) {
+            contactFormCannabis.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        formMessageCannabis.innerHTML = '<p class="text-green-500 font-semibold">Thanks! We’ve received your request and will be in touch soon.</p>';
+                        form.reset();
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                formMessageCannabis.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                            } else {
+                                formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">Oops—something went wrong. Please try again later.</p>';
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">Oops—something went wrong. Please try again later.</p>';
+                });
+            });
+        }
+    </script>
 </body>
 </html>
