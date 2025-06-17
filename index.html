@@ -11,7 +11,7 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1A202C/4A5568?text=Safe+Secure+Reliable'); /* Darker background */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/162240/feather-plume-bird-black-162240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-size: cover;
             background-position: center;
         }
@@ -39,22 +39,8 @@
             background-color: #2D3748; /* Tailwind gray-800 - new accent */
             margin: 10px auto 0;
         }
-        /* Custom scrollbar for a more modern look (optional) */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #555; /* Darker scrollbar thumb */
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #333; /* Even darker on hover */
-        }
         html {
-            scroll-padding-top: 90px; /* Adjusted for potentially taller header with logo */
+            scroll-padding-top: 100px; /* Adjusted for new header height */
         }
     </style>
 </head>
@@ -62,26 +48,21 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="block w-30 md:w-32 mr-6"> 
-                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.svg' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
-              <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="w-full h-auto"> 
-                <!-- For a text fallback or if you prefer text:
-                <span class="text-2xl font-bold text-gray-800">Blackbird <span class="text-slate-700">M.S.</span></span>
-                -->
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
             </a>
             <nav class="space-x-4">
-                <a href="#home" class="text-gray-600 hover:text-slate-700">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-slate-700">About Us</a>
                 <a href="#services" class="text-gray-600 hover:text-slate-700">Services</a>
-                <a href="#industries" class="text-gray-600 hover:text-slate-700">Industries</a>
+                <a href="mj.html" class="text-gray-600 hover:text-slate-700 whitespace-nowrap">Cannabis/CBD</a>
                 <a href="#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32"> <!-- Increased top padding for fixed header -->
+    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Payment Processing for High-Risk Industries</h1>
             <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Blackbird Merchant Services: Specializing in CBD, e-commerce, and other challenging sectors. We provide stable and secure merchant accounts tailored to your unique business needs.</p>
@@ -95,13 +76,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 section-title">About Blackbird Merchant Services</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
-                    <img src=blackbird logo.svg text=Our+Expert+Team" alt="Blackbird Merchant Services Team" class="rounded-lg shadow-lg w-full">
-                    <script>
-                        const imgAbout = document.querySelector('img[alt="Blackbird Merchant Services Team"]');
-                        imgAbout.onerror = () => {
-                            imgAbout.src = 'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Not+Available';
-                        };
-                    </script>
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A professional team collaborating in a modern office." class="rounded-lg shadow-lg w-full">
                 </div>
                 <div class="md:w-1/2">
                     <p class="text-lg mb-4">Blackbird Merchant Services was founded with a clear mission: to empower businesses in high-risk industries with dependable and transparent payment processing. We understand the unique challenges you face, from regulatory hurdles to banking complexities.</p>
@@ -117,53 +92,29 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Core Services</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">High-Risk Merchant Accounts</h3>
-                    <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors. We find solutions that fit your specific industry and risk profile.</p>
+                    <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors.</p>
                 </div>
-                <!-- Service Card 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">Chargeback Mitigation</h3>
-                    <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue, crucial for high-risk sectors.</p>
+                    <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue.</p>
                 </div>
-                <!-- Service Card 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">Fraud Prevention</h3>
-                    <p class="text-gray-600">Advanced fraud detection and prevention systems to safeguard your transactions and maintain account stability.</p>
+                    <p class="text-gray-600">Advanced systems to safeguard your transactions and maintain account stability.</p>
                 </div>
-                 <!-- Service Card 4 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">Payment Gateway Integration</h3>
-                    <p class="text-gray-600">Seamless integration with popular e-commerce platforms and shopping carts, ensuring a smooth checkout experience.</p>
+                    <p class="text-gray-600">Seamless integration with popular e-commerce platforms.</p>
                 </div>
-                 <!-- Service Card 5 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">Fast Approvals & Onboarding</h3>
-                    <p class="text-gray-600">Streamlined application process to get your high-risk merchant account up and running quickly.</p>
+                    <p class="text-gray-600">A streamlined application process to get you running quickly.</p>
                 </div>
-                 <!-- Service Card 6 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-3">Global Payment Solutions</h3>
-                    <p class="text-gray-600">Accept payments from customers worldwide with our international processing capabilities.</p>
+                    <p class="text-gray-600">Accept payments from customers worldwide.</p>
                 </div>
             </div>
         </div>
@@ -191,41 +142,33 @@
                     <h4 class="font-semibold text-lg">Travel & Tourism</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Sub" alt="Subscription Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Sub" alt="Subscription Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Subscription Services</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Nutra" alt="Nutraceuticals Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Nutra" alt="Nutraceuticals Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Nutraceuticals</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Adult" alt="Adult Entertainment Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Adult" alt="Adult Entertainment Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Adult Entertainment</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=More" alt="Other High-Risk Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=More" alt="Other High-Risk Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">And Many More...</h4>
                 </div>
             </div>
-            <script>
-                document.querySelectorAll('#industries img').forEach(img => {
-                    img.onerror = () => {
-                        const altText = img.alt.replace(' Icon', '').substring(0,5);
-                        img.src = `https://placehold.co/80x80/E2E8F0/4A5568?text=${altText}`;
-                    };
-                });
-            </script>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="py-16 bg-slate-800 text-white"> <!-- Changed background to dark slate -->
+    <!-- The Blackbird Advantage Section -->
+    <section id="advantage" class="py-16 bg-slate-800 text-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" style="--tw-text-opacity: 1; color: rgba(255, 255, 255, var(--tw-text-opacity));">Why Partner With Us?</h2>
-            <style> #why-choose-us .section-title::after { background-color: white; } </style>
+            <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" style="--tw-text-opacity: 1; color: rgba(255, 255, 255, var(--tw-text-opacity));">The Blackbird Advantage</h2>
+            <style> #advantage .section-title::after { background-color: white; } </style>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto"> <!-- Icon background white, icon color dark slate -->
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">High Approval Rates</h3>
@@ -261,8 +204,9 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Get Started Today</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
-                <p class="text-center text-lg mb-8">Ready to secure reliable payment processing for your high-risk business? Fill out the form below or contact us directly.</p>
-                <form action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
+                <p class="text-center text-lg mb-8">Ready to secure reliable payment processing? Fill out the form below or contact us directly.</p>
+                <form id="contactForm" action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="mb-6">
                         <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
                         <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
@@ -279,7 +223,7 @@
                         <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
                         <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
                     </div>
-                    <div class="mb-6">
+                     <div class="mb-6">
                         <label for="industry" class="block text-gray-700 font-semibold mb-2">Industry (e.g., CBD, E-commerce)</label>
                         <input type="text" id="industry" name="industry" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
                     </div>
@@ -295,25 +239,18 @@
             </div>
             <div class="text-center mt-12">
                 <p class="text-lg">Or reach us directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p> <!-- Updated Email -->
+                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12"> <!-- Darker footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
              <a href="#" class="flex items-center justify-center mb-4">
-                <!-- !!! AGAIN, REPLACE 'YOUR_LOGO_PATH/blackbird logo.svg' WITH THE ACTUAL PATH TO YOUR LOGO if you want it in footer too !!! -->
-                <!-- Or use a simplified/inverted version if you have one -->
                 <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYear"></span> Blackbird Merchant Services. All Rights Reserved.</p>
-            <p class="mt-2 text-sm">Your trusted partner in high-risk payment processing.</p>
-            <div class="mt-4">
-                <a href="#" class="text-gray-400 hover:text-white px-2">Privacy Policy</a> |
-                <a href="#" class="text-gray-400 hover:text-white px-2">Terms of Service</a>
-            </div>
         </div>
     </footer>
 
@@ -322,17 +259,45 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
 
         // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // AJAX Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const formData = new FormData(form);
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {'Accept': 'application/json'}
+                }).then(response => {
+                    if (response.ok) {
+                        formMessage.innerHTML = '<p class="text-green-500 font-semibold">Thank you for your inquiry! We will be in touch soon.</p>';
+                        form.reset();
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                formMessage.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                            } else {
+                                formMessage.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    formMessage.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
+                });
+            });
+        }
+    </script>
 </body>
 </html>
