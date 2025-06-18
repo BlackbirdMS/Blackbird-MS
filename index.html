@@ -40,7 +40,7 @@
             margin: 10px auto 0;
         }
         html {
-            scroll-padding-top: 100px; /* Adjusted for new header height */
+            scroll-padding-top: 80px; /* Adjusted for mobile header height */
         }
     </style>
 </head>
@@ -52,13 +52,31 @@
             <a href="index.html" class="flex items-center">
                 <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
             </a>
-            <nav class="space-x-4">
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-4 items-center">
                 <a href="#about" class="text-gray-600 hover:text-slate-700">About Us</a>
                 <a href="#services" class="text-gray-600 hover:text-slate-700">Services</a>
-                <!-- CORRECTED LINK TO "MJ" -->
                 <a href="MJ" class="text-gray-600 hover:text-slate-700 whitespace-nowrap">Cannabis/CBD</a>
                 <a href="#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="MJ" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Cannabis/CBD</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Get a Quote</a>
         </div>
     </header>
 
@@ -105,22 +123,22 @@
                     <h3 class="text-xl font-semibold mb-3">Fraud Prevention</h3>
                     <p class="text-gray-600">Advanced systems to safeguard your transactions and maintain account stability.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <h3 class="text-xl font-semibold mb-3">Payment Gateway Integration</h3>
                     <p class="text-gray-600">Seamless integration with popular e-commerce platforms.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <h3 class="text-xl font-semibold mb-3">Fast Approvals & Onboarding</h3>
                     <p class="text-gray-600">A streamlined application process to get you running quickly.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <h3 class="text-xl font-semibold mb-3">Global Payment Solutions</h3>
                     <p class="text-gray-600">Accept payments from customers worldwide.</p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Industries Served Section -->
     <section id="industries" class="py-16 bg-white">
         <div class="container mx-auto px-6">
@@ -169,30 +187,18 @@
             <style> #advantage .section-title::after { background-color: white; } </style>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-2">High Approval Rates</h3>
                     <p class="text-gray-300">Expertise in securing approvals for challenging industries.</p>
                 </div>
                 <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-2">Competitive Pricing</h3>
                     <p class="text-gray-300">Transparent and fair pricing structures tailored to your volume.</p>
                 </div>
                 <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
-                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
                     <p class="text-gray-300">Personalized assistance from our experienced support team.</p>
                 </div>
                  <div class="text-center">
-                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a4.063 4.063 0 000-5.728l-2.143-2.142a4.063 4.063 0 00-5.728 0l-.714.714a1.063 1.063 0 101.5 1.5l.714-.714a2.063 2.063 0 012.914 0l2.143 2.143a2.063 2.063 0 010 2.914l-2.143 2.143a2.063 2.063 0 01-2.914 0l-.714-.714a1.063 1.063 0 10-1.5 1.5l.714.714a4.063 4.063 0 005.728 0l2.143-2.143zM4.572 8.572a4.063 4.063 0 000 5.728l2.143 2.142a4.063 4.063 0 005.728 0l.714-.714a1.063 1.063 0 10-1.5-1.5l-.714.714a2.063 2.063 0 01-2.914 0L6.015 12.73a2.063 2.063 0 010-2.914l2.143-2.143a2.063 2.063 0 012.914 0l.714.714a1.063 1.063 0 101.5-1.5l-.714-.714a4.063 4.063 0 00-5.728 0L4.572 8.572z"></path></svg>
-                    </div>
                     <h3 class="text-xl font-semibold mb-2">Long-Term Stability</h3>
                     <p class="text-gray-300">Reliable banking partners for sustainable payment processing.</p>
                 </div>
@@ -201,7 +207,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
+    <section id="contact" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Get Started Today</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
@@ -238,9 +244,13 @@
                 </form>
                 <div id="formMessage" class="mt-6 text-center"></div>
             </div>
-            <div class="text-center mt-12">
-                <p class="text-lg">Or reach us directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p>
+            <div class="text-center mt-12 flex flex-col md:flex-row justify-center items-center">
+                <p class="text-lg mb-2 md:mb-0 md:mr-2">Or reach us directly:</p>
+                <div class="flex flex-col md:flex-row text-slate-700 font-semibold text-lg md:text-xl">
+                    <p>Phone: (818) 620-1435</p>
+                    <span class="hidden md:inline mx-2">|</span>
+                    <p>Email: blackbirdmerchantservicesllc@outlook.com</p>
+                </div>
             </div>
         </div>
     </section>
@@ -248,7 +258,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
-             <a href="#" class="flex items-center justify-center mb-4">
+             <a href="index.html" class="flex items-center justify-center mb-4">
                 <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYear"></span> Blackbird Merchant Services. All Rights Reserved.</p>
@@ -256,6 +266,13 @@
     </footer>
 
     <script>
+        // Hamburger menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
