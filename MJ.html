@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cannabis, CBD, Delta-8/9 Merchant Services | Blackbird M.S.</title>
+    <title>Cannabis, CBD, & Hemp Merchant Services | Blackbird M.S.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -40,7 +40,7 @@
             margin: 10px auto 0;
         }
         html {
-            scroll-padding-top: 90px; 
+            scroll-padding-top: 80px; 
         }
         .bullet-list li {
             position: relative;
@@ -60,15 +60,33 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-20 md:h-24 mr-3">
+                <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
             </a>
-            <nav class="space-x-4">
-                <a href="index.html#about" class="text-gray-600 hover:text-slate-700">About Us</a>
-                <a href="index.html#services" class="text-gray-600 hover:text-slate-700">Main Services</a>
-<a href="#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-slate-700">Home</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-slate-700">Services</a>
+                <a href="index.html#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="index.html#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="#contact-cannabis" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Get a Quote</a>
         </div>
     </header>
 
@@ -145,7 +163,7 @@
         </div>
     </section>
 
-        <!-- NEW SECTION FOR LICENSED DISPENSARIES -->
+    <!-- Compliant Processing for Licensed Dispensaries Section -->
     <section id="dispensary-info" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Compliant Processing for Licensed Dispensaries</h2>
@@ -163,9 +181,9 @@
     </section>
     
     <!-- Contact Section for Cannabis Page -->
-    <section id="contact-cannabis" class="py-16 bg-gray-50">
+    <section id="contact-cannabis" class="py-16 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 section-title">Discuss Your Cannabis/CBD/Delta Payment Needs</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Discuss Your Payment Needs</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
                 <p class="text-center text-lg mb-8">Let our experts help you find the right payment processing solution for your cannabis, CBD, THCA, or Delta business. Fill out the form for a confidential consultation.</p>
                 <form id="contactFormCannabis" action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
@@ -183,7 +201,7 @@
                         <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
                     </div>
                     <div class="mb-6">
-                        <label for="business_type" class="block text-gray-700 font-semibold mb-2">Business Type (e.g., CBD Online, Delta-8 Retail)</label>
+                        <label for="business_type" class="block text-gray-700 font-semibold mb-2">Business Type (e.g., Dispensary, CBD Online)</label>
                         <input type="text" id="business_type" name="business_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
                     </div>
                     <div class="mb-6">
@@ -196,9 +214,13 @@
                 </form>
                 <div id="formMessageCannabis" class="mt-6 text-center"></div>
             </div>
-            <div class="text-center mt-12">
-                <p class="text-lg">Or reach our specialists directly:</p>
-                <p class="text-slate-700 font-semibold text-xl mt-2">Phone: (818) 620-1435 | Email: blackbirdmerchantservicesllc@outlook.com </p> 
+            <div class="text-center mt-12 flex flex-col md:flex-row justify-center items-center">
+                <p class="text-lg mb-2 md:mb-0 md:mr-2">Or reach our specialists directly:</p>
+                <div class="flex flex-col md:flex-row text-slate-700 font-semibold text-lg md:text-xl">
+                    <p>Phone: (818) 620-1435</p>
+                    <span class="hidden md:inline mx-2">|</span>
+                    <p>Email: blackbirdmerchantservicesllc@outlook.com </p> 
+                </div>
             </div>
         </div>
     </section>
@@ -210,16 +232,19 @@
                 <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYearCannabis"></span> Blackbird Merchant Services. All Rights Reserved.</p>
-            <p class="mt-2 text-sm">Specialized payment solutions for high-risk industries, including Cannabis, CBD, and Delta-variants.</p>
-            <div class="mt-4">
-                <a href="index.html#privacy" class="text-gray-400 hover:text-white px-2">Privacy Policy</a> |
-                <a href="index.html#terms" class="text-gray-400 hover:text-white px-2">Terms of Service</a>
-            </div>
         </div>
     </footer>
 
-    <!-- UPDATED JAVASCRIPT -->
     <script>
+        // Hamburger menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
         // Smooth scrolling for anchor links on this page
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -236,22 +261,18 @@
         // Set current year in footer
         document.getElementById('currentYearCannabis').textContent = new Date().getFullYear();
 
-        // Contact Form Submission with AJAX
+        // AJAX Form Submission
         const contactFormCannabis = document.getElementById('contactFormCannabis');
         const formMessageCannabis = document.getElementById('formMessageCannabis');
-
         if(contactFormCannabis) {
             contactFormCannabis.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const form = e.target;
                 const formData = new FormData(form);
-
                 fetch(form.action, {
                     method: form.method,
                     body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    headers: {'Accept': 'application/json'}
                 }).then(response => {
                     if (response.ok) {
                         formMessageCannabis.innerHTML = '<p class="text-green-500 font-semibold">Thanks! We’ve received your request and will be in touch soon.</p>';
@@ -261,15 +282,16 @@
                             if (Object.hasOwn(data, 'errors')) {
                                 formMessageCannabis.innerHTML = data["errors"].map(error => error["message"]).join(", ");
                             } else {
-                                formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">Oops—something went wrong. Please try again later.</p>';
+                                formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
                             }
                         })
                     }
                 }).catch(error => {
-                    formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">Oops—something went wrong. Please try again later.</p>';
+                    formMessageCannabis.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
                 });
             });
         }
     </script>
 </body>
 </html>
+
