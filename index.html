@@ -11,7 +11,7 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('./hero-feather.png');
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/1A202C/4A5568?text=Safe+Secure+Reliable'); /* Darker background */
             background-size: cover;
             background-position: center;
         }
@@ -39,8 +39,22 @@
             background-color: #2D3748; /* Tailwind gray-800 - new accent */
             margin: 10px auto 0;
         }
+        /* Custom scrollbar for a more modern look (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555; /* Darker scrollbar thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333; /* Even darker on hover */
+        }
         html {
-            scroll-padding-top: 80px; /* Adjusted for mobile header height */
+            scroll-padding-top: 90px; /* Adjusted for potentially taller header with logo */
         }
     </style>
 </head>
@@ -48,40 +62,26 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="block w-30 md:w-32 mr-6"> 
+                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.svg' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
+              <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="w-full h-auto"> 
+                <!-- For a text fallback or if you prefer text:
+                <span class="text-2xl font-bold text-gray-800">Blackbird <span class="text-slate-700">M.S.</span></span>
+                -->
             </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex space-x-4 items-center">
+            <nav class="space-x-4">
+                <a href="#home" class="text-gray-600 hover:text-slate-700">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-slate-700">About Us</a>
                 <a href="#services" class="text-gray-600 hover:text-slate-700">Services</a>
-                <a href="MJ" class="text-gray-600 hover:text-slate-700 whitespace-nowrap">Cannabis/CBD</a>
+                <a href="#industries" class="text-gray-600 hover:text-slate-700">Industries</a>
                 <a href="#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
             </nav>
-
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About Us</a>
-            <a href="#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Services</a>
-            <a href="MJ" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Cannabis/CBD</a>
-            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Get a Quote</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32">
+    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32"> <!-- Increased top padding for fixed header -->
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Payment Processing for High-Risk Industries</h1>
             <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Blackbird Merchant Services: Specializing in CBD, e-commerce, and other challenging sectors. We provide stable and secure merchant accounts tailored to your unique business needs.</p>
@@ -95,7 +95,13 @@
             <h2 class="text-3xl font-bold text-center mb-12 section-title">About Blackbird Merchant Services</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
-                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A professional team collaborating in a modern office." class="rounded-lg shadow-lg w-full">
+                    <img src=blackbird logo.svg text=Our+Expert+Team" alt="Blackbird Merchant Services Team" class="rounded-lg shadow-lg w-full">
+                    <script>
+                        const imgAbout = document.querySelector('img[alt="Blackbird Merchant Services Team"]');
+                        imgAbout.onerror = () => {
+                            imgAbout.src = 'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Not+Available';
+                        };
+                    </script>
                 </div>
                 <div class="md:w-1/2">
                     <p class="text-lg mb-4">Blackbird Merchant Services was founded with a clear mission: to empower businesses in high-risk industries with dependable and transparent payment processing. We understand the unique challenges you face, from regulatory hurdles to banking complexities.</p>
@@ -114,68 +120,55 @@
                 <!-- Service Card 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-                        </svg>
+                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">High-Risk Merchant Accounts</h3>
-                    <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors.</p>
+                    <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors. We find solutions that fit your specific industry and risk profile.</p>
                 </div>
                 <!-- Service Card 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
+                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Chargeback Mitigation</h3>
-                    <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue.</p>
+                    <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue, crucial for high-risk sectors.</p>
                 </div>
                 <!-- Service Card 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
-                        </svg>
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Fraud Prevention</h3>
-                    <p class="text-gray-600">Advanced systems to safeguard your transactions and maintain account stability.</p>
+                    <p class="text-gray-600">Advanced fraud detection and prevention systems to safeguard your transactions and maintain account stability.</p>
                 </div>
                  <!-- Service Card 4 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
-                        </svg>
+                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Payment Gateway Integration</h3>
-                    <p class="text-gray-600">Seamless integration with popular e-commerce platforms.</p>
+                    <p class="text-gray-600">Seamless integration with popular e-commerce platforms and shopping carts, ensuring a smooth checkout experience.</p>
                 </div>
                  <!-- Service Card 5 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                       <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                         <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-                       </svg>
+                        <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Fast Approvals & Onboarding</h3>
-                    <p class="text-gray-600">A streamlined application process to get you running quickly.</p>
+                    <p class="text-gray-600">Streamlined application process to get your high-risk merchant account up and running quickly.</p>
                 </div>
                  <!-- Service Card 6 -->
                 <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12H20.25" />
-                        </svg>
+                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Global Payment Solutions</h3>
-                    <p class="text-gray-600">Accept payments from customers worldwide.</p>
+                    <p class="text-gray-600">Accept payments from customers worldwide with our international processing capabilities.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Industries Served Section -->
     <section id="industries" class="py-16 bg-white">
         <div class="container mx-auto px-6">
@@ -198,22 +191,30 @@
                     <h4 class="font-semibold text-lg">Travel & Tourism</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Sub" alt="Subscription Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Sub" alt="Subscription Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Subscription Services</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Nutra" alt="Nutraceuticals Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Nutra" alt="Nutraceuticals Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Nutraceuticals</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Adult" alt="Adult Entertainment Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Adult" alt="Adult Entertainment Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">Adult Entertainment</h4>
                 </div>
                 <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
-                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=More" alt="Other High-Risk Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                     <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=More" alt="Other High-Risk Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
                     <h4 class="font-semibold text-lg">And Many More...</h4>
                 </div>
             </div>
+            <script>
+                document.querySelectorAll('#industries img').forEach(img => {
+                    img.onerror = () => {
+                        const altText = img.alt.replace(' Icon', '').substring(0,5);
+                        img.src = `https://placehold.co/80x80/E2E8F0/4A5568?text=${altText}`;
+                    };
+                });
+            </script>
         </div>
     </section>
 
@@ -239,7 +240,9 @@
                 </div>
                 <div class="text-center">
                     <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
-                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
                     <p class="text-gray-300">Personalized assistance from our experienced support team.</p>
@@ -372,4 +375,5 @@
     </script>
 </body>
 </html>
+
 
