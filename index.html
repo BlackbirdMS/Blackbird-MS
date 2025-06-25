@@ -6,18 +6,54 @@
     <title>Blackbird Merchant Services - High-Risk Payment Processing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('./hero-feather.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #2D3748; /* Tailwind gray-800 */
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #2D3748; /* Tailwind gray-800 - new accent */
+            margin: 10px auto 0;
+        }
+        html {
+            scroll-padding-top: 80px; /* Adjusted for mobile header height */
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
+    <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <img src="./blackbird logo.svg" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
             </a>
             
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-4 items-center">
                 <a href="#about" class="text-gray-600 hover:text-slate-700">About Us</a>
                 <a href="#services" class="text-gray-600 hover:text-slate-700">Services</a>
@@ -25,6 +61,7 @@
                 <a href="#contact" class="bg-black hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg cta-button whitespace-nowrap">Get a Quote</a>
             </nav>
 
+            <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +71,7 @@
             </div>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About Us</a>
             <a href="#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Services</a>
@@ -42,6 +80,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Reliable Payment Processing for High-Risk Industries</h1>
@@ -50,10 +89,11 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">About Blackbird Merchant Services</h2>
-             <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
                     <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A professional team collaborating in a modern office." class="rounded-lg shadow-lg w-full">
                 </div>
@@ -66,6 +106,204 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Core Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">High-Risk Merchant Accounts</h3>
+                    <p class="text-gray-600">Tailored accounts for businesses often declined by traditional processors.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Chargeback Mitigation</h3>
+                    <p class="text-gray-600">Proactive strategies and tools to minimize chargebacks and protect your revenue.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fraud Prevention</h3>
+                    <p class="text-gray-600">Advanced systems to safeguard your transactions and maintain account stability.</p>
+                </div>
+                 <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Payment Gateway Integration</h3>
+                    <p class="text-gray-600">Seamless integration with popular e-commerce platforms.</p>
+                </div>
+                 <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                       <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                       </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fast Approvals & Onboarding</h3>
+                    <p class="text-gray-600">A streamlined application process to get you running quickly.</p>
+                </div>
+                 <!-- Service Card 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                         <svg class="w-8 h-8 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Global Payment Solutions</h3>
+                    <p class="text-gray-600">Accept payments from customers worldwide with our international processing capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Industries Served Section -->
+    <section id="industries" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Industries We Specialize In</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=CBD" alt="CBD Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">CBD & Hemp Products</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=eCom" alt="E-commerce Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">E-commerce</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Gaming" alt="Online Gaming Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">Online Gaming</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Travel" alt="Travel Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">Travel & Tourism</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Sub" alt="Subscription Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">Subscription Services</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Nutra" alt="Nutraceuticals Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">Nutraceuticals</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=Adult" alt="Adult Entertainment Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">Adult Entertainment</h4>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-md transition-shadow">
+                    <img src="https://placehold.co/80x80/2D3748/FFFFFF?text=More" alt="Other High-Risk Icon" class="mx-auto mb-3 rounded-full h-16 w-16 object-cover">
+                    <h4 class="font-semibold text-lg">And Many More...</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Blackbird Advantage Section -->
+    <section id="advantage" class="py-16 bg-slate-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title text-white" style="--tw-text-opacity: 1; color: rgba(255, 255, 255, var(--tw-text-opacity));">The Blackbird Advantage</h2>
+            <style> #advantage .section-title::after { background-color: white; } </style>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">More Options, Higher Approvals</h3>
+                    <p class="text-gray-300">Because we aren't tied to a single processor, we leverage our diverse network to find the perfect fit, dramatically increasing your approval odds.</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Access to Better Rates</h3>
+                    <p class="text-gray-300">Our multiple partnerships allow us to find the most competitive pricing available for your specific industry and business volume.</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
+                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">A True Partnership</h3>
+                    <p class="text-gray-300">As a partner-run business, we're invested in your success. You get personalized assistance from decision-makers, not sales agents.</p>
+                </div>
+                 <div class="text-center">
+                    <div class="flex items-center justify-center bg-white text-slate-800 rounded-full w-20 h-20 mb-4 mx-auto">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Solutions Built to Last</h3>
+                    <p class="text-gray-300">We focus on long-term stability by placing you with the right banking partners from the start, minimizing the risk of account shutdowns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Get Started Today</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
+                <p class="text-center text-lg mb-8">Ready to secure reliable payment processing? Fill out the form below or contact us directly.</p>
+                <form id="contactForm" action="https://formsubmit.co/blackbirdmerchantservicesllc@outlook.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
+                    </div>
+                    <div class="mb-6">
+                        <label for="company" class="block text-gray-700 font-semibold mb-2">Company Name</label>
+                        <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600">
+                    </div>
+                     <div class="mb-6">
+                        <label for="industry" class="block text-gray-700 font-semibold mb-2">Industry (e.g., CBD, E-commerce)</label>
+                        <input type="text" id="industry" name="industry" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-600" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-black hover:bg-slate-800 text-white font-bold py-3 px-10 rounded-lg text-lg cta-button">Send Inquiry</button>
+                    </div>
+                </form>
+                <div id="formMessage" class="mt-6 text-center"></div>
+            </div>
+            <div class="text-center mt-12 flex flex-col md:flex-row justify-center items-center">
+                <p class="text-lg mb-2 md:mb-0 md:mr-2">Or reach us directly:</p>
+                <div class="flex flex-col md:flex-row text-slate-700 font-semibold text-lg md:text-xl">
+                    <p>Phone: (818) 620-1435</p>
+                    <span class="hidden md:inline mx-2">|</span>
+                    <p>Email: BlackbirdMS@outlook.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
              <a href="index.html" class="flex items-center justify-center mb-4">
@@ -75,6 +313,59 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Hamburger menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // AJAX Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const formData = new FormData(form);
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {'Accept': 'application/json'}
+                }).then(response => {
+                    if (response.ok) {
+                        formMessage.innerHTML = '<p class="text-green-500 font-semibold">Thank you for your inquiry! We will be in touch soon.</p>';
+                        form.reset();
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                formMessage.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                            } else {
+                                formMessage.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    formMessage.innerHTML = '<p class="text-red-500 font-semibold">An error occurred. Please try again.</p>';
+                });
+            });
+        }
+    </script>
 </body>
 </html>
