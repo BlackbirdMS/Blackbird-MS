@@ -1,0 +1,41 @@
+body {
+    [cite_start]font-family: 'Inter', sans-serif; [cite: 1]
+[cite_start]} [cite: 2]
+.hero-bg {
+    [cite_start]background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('./hero-feather.png'); [cite: 2]
+    [cite_start]background-size: cover; [cite: 3]
+    [cite_start]background-position: center; [cite: 3]
+[cite_start]} [cite: 3]
+.cta-button {
+    [cite_start]transition: all 0.3s ease; [cite: 3]
+[cite_start]} [cite: 4]
+.cta-button:hover {
+    [cite_start]transform: translateY(-2px); [cite: 4]
+    [cite_start]box-shadow: 0 4px 12px rgba(0,0,0,0.2); [cite: 5]
+[cite_start]} [cite: 5]
+.feature-card {
+    [cite_start]transition: all 0.3s ease; [cite: 5]
+    [cite_start]border: 1px solid transparent; [cite: 6]
+[cite_start]} [cite: 6]
+.feature-card:hover {
+    [cite_start]transform: translateY(-5px); [cite: 6]
+    [cite_start]box-shadow: 0 8px 16px rgba(0,0,0,0.1); [cite: 7]
+    border-color: #2D3748; [cite_start]/* Tailwind gray-800 */ [cite: 7]
+[cite_start]} [cite: 7]
+.section-title::after {
+    [cite_start]content: ''; [cite: 7]
+    [cite_start]display: block; [cite: 8]
+    [cite_start]width: 60px; [cite: 8]
+    [cite_start]height: 4px; [cite: 8]
+    background-color: #2D3748; [cite_start]/* Tailwind gray-800 - new accent */ [cite: 8]
+    [cite_start]margin: 10px auto 0; [cite: 8]
+[cite_start]} [cite: 9]
+html {
+    [cite_start]scroll-padding-top: 80px; [cite: 9]
+    [cite_start]/* Adjusted for mobile header height */ [cite: 10]
+[cite_start]} [cite: 10]
+
+/* Style from the #advantage section */
+#advantage .section-title::after { 
+    [cite_start]background-color: white; [cite: 48]
+[cite_start]} [cite: 48]
