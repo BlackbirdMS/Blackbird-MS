@@ -54,15 +54,21 @@
             color: #38A169; /* Tailwind green-600 */
             font-weight: bold;
         }
+        /* Styles for FAQ accordion */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-6 py-0 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <img src="./blackbird logo3 crop.png" alt="Blackbird Merchant Services Logo" class="h-12 md:h-16 mr-3">
+                 <img src="./Blackbird Logo Text 2.png" alt="Blackbird Merchant Services Logo" class="h-16 md:h-20 mr-3">
             </a>
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-4 items-center">
@@ -103,41 +109,73 @@
                     <img src="coast is clear.png" alt="A vintage VW bus on a beach." class="rounded-lg shadow-lg w-full">
                 </div>
                 <div>
-                    <p class="text-lg mb-4">The cannabis, CBD, and Delta-variant markets are rapidly evolving, and so are the regulations surrounding them. Standard payment processors often shy away from these industries due to their high-risk classification. At Blackbird Merchant Services, we embrace the challenge.</p>
+                    <p class="text-lg mb-4">The cannabis, CBD, and Delta-variant markets are rapidly evolving. Standard payment processors often shy away from these industries due to their high-risk classification. At Blackbird Merchant Services, we embrace the challenge.</p>
                     <ul class="text-lg mb-4 bullet-list">
-                        <li><strong>Industry Expertise:</strong> Deep understanding of the specific needs of CBD, Delta-8, Delta-10, and licensed cannabis retailers.</li>
-                        <li><strong>Stable Solutions:</strong> We partner with acquiring banks that are knowledgeable and supportive of these industries.</li>
-                        <li><strong>Compliance Focused:</strong> Guidance to help you navigate the complex web of local, state, and federal regulations.</li>
-                        <li><strong>Transparent Pricing:</strong> Clear, upfront pricing with no hidden fees. We believe in fair partnerships.</li>
-                        <li><strong>Dedicated Support:</strong> Access to experts who understand your business and can provide tailored support.</li>
+                        <li><strong>Seasoned Industry Expertise:</strong> With years of specialized experience in the cannabis payments sector, we know what it takes to keep you processing securely.</li>
+                        <li><strong>Stable, Compliant Solutions:</strong> We only partner with acquiring banks that are knowledgeable and supportive of these industries, focusing on long-term stability.</li>
+                        <li><strong>Transparent Pricing:</strong> Clear, upfront pricing with no hidden fees. We offer free rate comparisons to show you how much you can save.</li>
+                        <li><strong>Direct, Dedicated Support:</strong> Forget call centers and sales reps. You'll work directly with our founder, a seasoned expert who provides immediate, tailored support.</li>
                     </ul>
                     <p class="text-lg font-semibold text-slate-700">We're committed to providing the payment infrastructure you need to thrive in this dynamic market.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- The Blackbird Difference Section -->
+    <section id="difference" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">The Blackbird Difference: Partnership & Stability</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <!-- Card 1: Direct Access -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Direct-to-Founder Access</h3>
+                    <p class="text-gray-600">As a sole proprietor, you work directly with the decision-maker. No layers of bureaucracy, just quick, expert answers.</p>
+                </div>
+                <!-- Card 2: Proven Experience -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Solutions from Experience</h3>
+                    <p class="text-gray-600">Our strategies are built on frontline experience navigating the industry's rapid changes. We know what works to build solutions that last.</p>
+                </div>
+                <!-- Card 3: Stability Focused -->
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
+                         <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Preventing Shutdowns</h3>
+                    <p class="text-gray-600">Our primary goal is your stability. We proactively structure accounts to minimize the risk of holds or terminations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Tailored Solutions for the Cannabis Ecosystem -->
-    <section id="services-cannabis" class="py-16 bg-gray-50">
+    <section id="services-cannabis" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Tailored Solutions for the Cannabis Ecosystem</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
-                        <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6">
+                        <svg class="w-8 h-8 text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">CBD Merchant Accounts</h3>
                     <p class="text-gray-600">Reliable processing for online and retail CBD sales, including full-spectrum, broad-spectrum, and isolate products.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6">
                          <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Delta-8 & Delta-10 Solutions</h3>
                     <p class="text-gray-600">Specialized accounts for businesses selling hemp-derived Delta-8 & 10 THC and compliant Delta-9 THC products.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
-                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6">
                         <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2zm10-10V7a4 4 0 0 0-8 0v4h8z"></path></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Licensed Cannabis Retail</h3>
@@ -148,29 +186,29 @@
     </section>
     
     <!-- B2B Solutions Section -->
-    <section id="b2b-solutions" class="py-16 bg-white">
+    <section id="b2b-solutions" class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">B2B Solutions for the Supply Chain</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
                 <!-- Card 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
-                    <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
                         <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-2.25 3h5.25m-5.25 3h5.25M3 3v18h18V3H3Zm14.25 14.25H6.75V6.75h10.5v10.5Z" /></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Support for the Supply Chain</h3>
                     <p class="text-gray-600">Our system simplifies B2B payment collection, eliminating the need for cash and check transactions.</p>
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
-                     <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
                          <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Zero SaaS Costs</h3>
                     <p class="text-gray-600">There are no software as a service fees associated with using our B2B payment system.</p>
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg feature-card">
-                     <div class="flex items-center justify-center bg-slate-200 rounded-full w-16 h-16 mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-lg feature-card">
+                     <div class="flex items-center justify-center bg-slate-100 rounded-full w-16 h-16 mb-6 mx-auto">
                         <svg class="w-8 h-8 text-slate-700" xmlns="https://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></svg>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">A Simple Plug-and-Play Solution</h3>
@@ -181,7 +219,7 @@
     </section>
 
     <!-- Compliant Processing for Licensed Dispensaries Section -->
-    <section id="dispensary-info" class="py-16 bg-gray-50">
+    <section id="dispensary-info" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12 section-title">Compliant Processing for Licensed Dispensaries</h2>
             <div class="max-w-3xl mx-auto">
@@ -193,6 +231,86 @@
                     <li><strong>Dedicated Expert Support:</strong> Your account is managed by specialists who understand the unique compliance landscape of your state.</li>
                 </ul>
                 <p class="text-lg font-semibold text-slate-700">Stop worrying about payment shutdowns. Partner with an expert who can provide a truly stable merchant account for your dispensary.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onboarding Process Section -->
+    <section id="onboarding-process" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Simple 4-Step Onboarding Process</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-20 h-20 mb-4 border-2 border-slate-200">
+                        <span class="text-3xl font-bold text-slate-600">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Consultation</h3>
+                    <p class="text-gray-600">Start with a quick, 15-minute call to discuss your specific business needs and challenges.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-20 h-20 mb-4 border-2 border-slate-200">
+                        <span class="text-3xl font-bold text-slate-600">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Application</h3>
+                    <p class="text-gray-600">We provide a straightforward application. Our team will guide you through gathering the necessary documents.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-20 h-20 mb-4 border-2 border-slate-200">
+                        <span class="text-3xl font-bold text-slate-600">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Underwriting</h3>
+                    <p class="text-gray-600">We advocate for you during underwriting, which can take as little as 48 hours for approval.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center bg-slate-100 rounded-full w-20 h-20 mb-4 border-2 border-slate-200">
+                        <span class="text-3xl font-bold text-slate-600">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Go-Live</h3>
+                    <p class="text-gray-600">Once approved, we help integrate our solution and get you processing payments, often within a week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-cannabis" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="accordion-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                        <span>Is accepting card payments for cannabis and CBD legal?</span>
+                        <svg class="w-6 h-6 shrink-0 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 px-5 pb-5">Yes, within certain frameworks. We provide robust solutions for federally legal CBD and hemp-derived products. For licensed dispensaries, we offer compliant options like PIN Debit that operate within established regulations. Crucially, we only partner with financial institutions that have established, fully compliant cannabis banking programs, ensuring the highest level of account stability.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="accordion-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                        <span>What are the rates for high-risk processing?</span>
+                         <svg class="w-6 h-6 shrink-0 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 px-5 pb-5">Rates vary based on your business type, sales volume, and history. We are committed to transparent pricing and will provide a detailed, no-obligation quote and a free rate comparison to show you exactly what you can save. Our goal is to find you the most competitive and sustainable rates available.</p>
+                    </div>
+                </div>
+                 <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="accordion-toggle flex justify-between items-center w-full p-5 text-left font-semibold">
+                        <span>How long does the approval process take?</span>
+                         <svg class="w-6 h-6 shrink-0 transform transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 px-5 pb-5">Our close banking relationships and expertise allow for an efficient process. CBD and Delta businesses can often be approved in a few business days. Dispensary accounts may take slightly longer due to stricter underwriting, but we work to expedite the process as much as possible.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -236,7 +354,7 @@
                 <div class="flex flex-col md:flex-row text-slate-700 font-semibold text-lg md:text-xl">
                     <p>Phone: (818) 620-1435</p>
                     <span class="hidden md:inline mx-2">|</span>
-                    <p>Email: blackbirdMS@outlook.com </p> 
+                    <p>Email: blackbirdmerchantservicesllc@outlook.com</p> 
                 </div>
             </div>
         </div>
@@ -246,7 +364,7 @@
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
              <a href="index.html" class="flex items-center justify-center mb-4">
-                <img src="./blackbird logo3 crop.png" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
+                <img src="./Blackbird Logo Text 2.png" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYearCannabis"></span> Blackbird Merchant Services. All Rights Reserved.</p>
         </div>
@@ -308,6 +426,24 @@
                 });
             });
         }
+
+        // Accordion functionality for FAQ
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+        accordionToggles.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
     </script>
 </body>
 </html>
