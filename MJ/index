@@ -76,8 +76,8 @@
     <header class="bg-white shadow-md fixed w-full z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center"> <!-- Assuming your main page is index.html -->
-                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
-                <img src="./blackbird logo.png" alt="Blackbird Merchant Services Logo" class="h-10 md:h-12 mr-3">
+                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo3 crop.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
+                <img src="./blackbird logo3 crop.png" alt="Blackbird Merchant Services Logo" class="h-10 md:h-12 mr-3">
             </a>
             <nav class="space-x-4">
                 <a href="index.html#about" class="text-gray-600 hover:text-slate-700">About Us</a>
@@ -248,8 +248,8 @@
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-6 text-center">
              <a href="index.html" class="flex items-center justify-center mb-4">
-                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
-                <img src="./blackbird logo.png" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
+                <!-- !!! REPLACE 'YOUR_LOGO_PATH/blackbird logo3 crop.png' WITH THE ACTUAL PATH TO YOUR LOGO !!! -->
+                <img src="./blackbird logo3 crop.png" alt="Blackbird Merchant Services Logo - Footer" class="h-8 filter invert">
             </a>
             <p>&copy; <span id="currentYearCannabis"></span> Blackbird Merchant Services. All Rights Reserved.</p>
             <p class="mt-2 text-sm">Specialized payment solutions for high-risk industries, including Cannabis, CBD, and Delta-variants.</p>
